@@ -11,13 +11,13 @@ export function FlexiForm({ onSubmitFn, config }) {
 
   return (
     <>
-      <form onSubmit={submitHandler}>
+      <form onSubmit={submitHandler} style={{padding:'3%',borderStyle:"double",maxWidth:"20%",marginTop:'2%'}}>
         {(config && config.items && config.items.length > 0 &&
           config.items.map((current, index) => {
             if (current.type === "TextField") {
               return (
-                <div key={index}>
-                  <label> {current.label} 
+                <div key={index} style={{marginBottom:'2%'}}>
+                  <label> {current.label} &nbsp; 
                   <input
                     type="text"
                     onChange={(e) => {
@@ -29,8 +29,8 @@ export function FlexiForm({ onSubmitFn, config }) {
               );
             } else if (current.type === "DropDown") {
               return (
-                <div key={index}>
-                  <label >{current.label} 
+                <div key={index} style={{marginBottom:'2%'}}>
+                  <label >{current.label}  &nbsp;  &nbsp;
                   <select
                     type="text"
                     onChange={(e) => {
