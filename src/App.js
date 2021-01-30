@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FlexiForm } from "./form";
+import { Flexi } from "./form";
 const flexiConfig = {
   items: [
     {
@@ -38,7 +38,7 @@ class App extends Component {
   render() {
     return (
       <div style={{position:"relative",left:'35%'}}>
-        <FlexiForm onSubmitFn={this.onFlexiSubmit} config={flexiConfig} />
+        <Flexi onSubmitFn={this.onFlexiSubmit} config={flexiConfig} />
         <div > 
           <p>{this.state.name && `name: ${this.state.name}`}</p>
           <p>{this.state.place && `state: ${this.state.place}`}</p>

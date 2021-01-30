@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export function FlexiForm({ onSubmitFn, config }) {
+export function Flexi({ onSubmitFn, config }) {
   const [inputVal, setInputVal] = useState("");
   const [dropdown, setDropdown] = useState("");
 
